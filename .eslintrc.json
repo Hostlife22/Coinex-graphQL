@@ -1,0 +1,46 @@
+{
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es2021": true
+  },
+  "extends": ["airbnb-base", "plugin:prettier/recommended"],
+  "parserOptions": {
+    "ecmaVersion": "latest"
+  },
+  "plugins": ["prettier"],
+  "rules": {
+    "no-unused-vars": "warn",
+    "import/extensions": "off",
+    "no-shadow": "off",
+    "no-nested-ternary": "off",
+    "import/no-cycle": "off",
+    "prefer-destructuring": "off",
+    "no-underscore-dangle": "off",
+    "consistent-return": "off",
+    "no-param-reassign": "off",
+    "quotes": [
+      2,
+      "single",
+      {
+        "avoidEscape": true,
+        "allowTemplateLiterals": true
+      }
+    ],
+    "import/prefer-default-export": "off",
+    "import/export": "off",
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto",
+        "trailingComma": "all",
+        "tabWidth": 2,
+        "useTabs": false,
+        "singleQuote": true,
+        "printWidth": 100,
+        "bracketSameLine": true,
+        "semi": true
+      }
+    ]
+  }
+}
